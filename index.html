@@ -11,17 +11,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind Custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "color-1": '#131318',
+                        "color-2": 'rgba(255, 255, 255, 0.60)',
+                        "color-3": '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         .font-manrope{
             font-family: 'Manrope', sans-serif;
         }
     </style>
 </head>
-<body class="font-manrope">
-    <header>
-
+<body class="font-manrope m-0 p-0">
+    <header class="container mx-auto my-5">
+        <!-- Navbar Secton Start -->
+        <nav class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <div tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <a class=" text-color-3 hover:text-color-3 duration-300" href="#">Home</a>
+                <a class=" text-[#424247] hover:text-color-3 duration-300" href="#">About</a>
+                <a class=" text-[#424247] hover:text-color-3 duration-300" href="#">Pages</a>
+                <a class="text-[#424247] hover:text-color-3 duration-300" href="#">Blog</a>
+                <a class="text-[#424247] hover:text-color-3 duration-300" href="#">Contact</a>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-color-1 text-xl lg:text-4xl font-extrabold">Hockey<span class="text-color-3 font-extrabold text-xl lg:text-4xl">’</span>s</h1>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <div class="menu menu-horizontal px-1 space-x-10">
+                <a class=" text-color-3 hover:text-color-3 duration-300" href="#">Home</a>
+                <a class=" text-[#424247] hover:text-color-3 duration-300" href="#">About</a>
+                <a class=" text-[#424247] hover:text-color-3 duration-300" href="#">Pages</a>
+                <a class="text-[#424247] hover:text-color-3 duration-300" href="#">Blog</a>
+                <a class="text-[#424247] hover:text-color-3 duration-300" href="#">Contact</a>
+              </div>
+            </div>
+            <div class="navbar-end space-x-5 items-center">
+                <div class="flex items-center justify-center gap-6">
+                    <img class="cursor-pointer hidden lg:flex" src="./Images/Frame (1).png" alt="">
+                    <a class=" py-2 lg:py-3 cursor-pointer rounded-lg bg-color-3 text-white px-3 lg:px-4 font-bold">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
+    <!-- Navbar Section End -->
+    <main class="container mx-auto my-5">
+        <!-- banner section Start -->
+        <section class="mt-12 relative">
+            <div class="carousel w-full h-[200px] lg:h-[550px]">
+                <!-- Slider-1 -->
+                <div id="slide1" class="carousel-item relative w-full bg-[url('./Images/1.png')] bg-no-repeat bg-cover rounded-2xl">
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle"> ❯ </a>
+                  </div>
+                </div> 
+                 <!-- Slider-2 -->
+                <div id="slide2" class="carousel-item relative w-full bg-[url('./Images/4.png')] bg-no-repeat bg-cover rounded-2xl">
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle"> ❯ </a>
+                  </div>
+                </div>                                
+              </div>
+              <div class="lg:flex lg:flex-col p-4 lg:p-8 absolute right-8 bottom-8 w-[50%] justify-center  rounded-2xl text-white bg-color-1">
+                <h2 class="text-2xl font-extrabold ">Meet all the heroes from the field</h2>
+                <p class="text-color-2 font-medium mt-4">Choose your hero and compete against 3 fierce opponents in the ice hockey event. Avoid the attacking players to approach the goal line.</p>
+              </div>
+        </section>
 
     </main>
     <footer>
