@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Tailwind Custom color -->
     <script>
         tailwind.config = {
@@ -264,16 +267,64 @@
                     </div>
                     </div>
                     
-            </section> 
-
-
-
-
-              
-        
+            </section>   
     </main>
-    <footer>
-        
+    <!-- footer section start -->
+    <footer class="bg-black">
+        <div class="container mx-auto">
+            <div class="py-10 px-10 lg:px-0 lg:py-24 grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <nav class="flex flex-col  lg:justify-start lg:items-start ">
+                    <h3 class=" text-white text-3xl font-extrabold">Get In Touch</h3>
+                    <div class="text-color-2 font-medium  flex flex-col  gap-4">
+                        <p class="my-4 text-center lg:text-left">
+                            Dit amet consectetur. Condimentum <br> adipiscing  aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin.
+                        </p>
+                        <div class=" flex flex-col items-center  lg:items-start ">
+                        <p class="flex gap-4 ">
+                            <span class="text-color-3"><i class="fa-regular fa-envelope"></i></span>
+                                <span>hockeys@support.com</span>
+                            </p>
+                            <p class="flex gap-4 items-center">
+                                <span class="text-color-3"><i class="fa-solid fa-phone"></i></span>
+                                <span>(+62) 123-321-543</span>
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+                <div class="flex justify-around ">
+                    <nav class=" text-center lg:text-start">
+                        <header class=" text-white text-xl font-extrabold">Company</header>
+                        <div class="text-color-2 font-medium  flex flex-col gap-6 mt-7">
+                            <a href="#">About us</a>
+                            <a href="#">Leadership</a>
+                            <a href="#">Careers</a>
+                            <a href="#">News & Article</a>
+                            <a href="#">Legal Notice</a>
+                        </div>
+                    </nav>        
+                    <nav class=" text-center lg:text-start lg:pl-10">
+                        <header class=" text-white text-xl font-extrabold">Support</header>
+                        <div class="text-color-2 font-medium  flex flex-col gap-6 mt-7">
+                            <a href="#">Help Center</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">Ticket Support</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </nav>
+                </div>
+                <nav class=" lg:pl-10 text-center lg:text-start ">
+                    <header class=" text-white text-xl font-extrabold">Services</header>
+                    <div class="text-color-2 font-medium  flex flex-col gap-6 mt-7">
+                        <a href="#">Academy</a>
+                        <a href="#">Group Lesson</a>
+                        <a href="#">Private Lesson</a>
+                        <a href="#">Hockeys for kids</a>
+                        <a href="#">Hockeys for Adult</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </footer>
+    <!-- footer section End -->
 </body>
 </html>
